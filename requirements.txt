@@ -1,0 +1,6 @@
+PyQt6
+PyQt6-WebEngine
+keyboard
+pyperclip
+mouse
+openpyxl
