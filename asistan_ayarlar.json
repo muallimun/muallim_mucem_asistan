@@ -1,0 +1,6 @@
+{
+    "hotkey": "ctrl+shift+z",
+    "excel_path": "kelime_listem.xlsx",
+    "auto_start": true,
+    "allow_empty_meaning": false
+}
