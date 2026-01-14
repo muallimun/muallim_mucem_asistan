@@ -76,5 +76,4 @@ Bu proje **Muallimun.Net** tarafından dil eğitimine katkı amacıyla geliştir
 * **Web:** [muallimun.net](https://www.muallimun.net)
 
 ---
-
 <p align="center"><i>Arapça öğrenim sürecinizi hızlandırmak için tasarlandı.</i></p>
