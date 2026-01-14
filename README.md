@@ -71,9 +71,10 @@ Uygulama modern kütüphaneler ve ileri seviye Windows entegrasyonu ile gelişti
 
 Bu proje **Muallimun.Net** tarafından dil eğitimine katkı amacıyla geliştirilmiştir.
 
-* **Geliştirici:** Muallimun Ekibi
+* **Geliştirici:** Abdullah TAT
 * **İletişim:** [tatabdullah@hotmail.com](mailto:tatabdullah@hotmail.com)
 * **Web:** [muallimun.net](https://www.muallimun.net)
 
 ---
+
 <p align="center"><i>Arapça öğrenim sürecinizi hızlandırmak için tasarlandı.</i></p>
