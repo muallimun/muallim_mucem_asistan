@@ -73,6 +73,7 @@ Bu proje **Muallimun.Net** tarafından dil eğitimine katkı amacıyla geliştir
 
 * **Geliştirici:** Abdullah TAT
 * **İletişim:** [tatabdullah@hotmail.com](mailto:tatabdullah@hotmail.com)
+* *Destek:** [Muallim_Asisten] (https://arapca.muallimun.net/asistan_sozluk)
 * **Web:** [muallimun.net](https://www.muallimun.net)
 
 ---
