@@ -1,6 +1,9 @@
 import sys, re, time, keyboard, pyperclip, mouse, json, os, traceback, urllib.request, ssl, ctypes, subprocess
 import openpyxl
 from openpyxl import Workbook, load_workbook
+if getattr(sys, 'frozen', False):
+    # Uygulamanın her zaman kendi kurulu olduğu klasörde (C:\Program Files vb.) çalışmasını sağlar
+    os.chdir(os.path.dirname(sys.executable))
 
 # --- GLOBAL DEĞİŞKENLER ---
 VERSION = "1.4.8" #
@@ -41,10 +44,10 @@ def run_as_admin():
     return False
 
 def set_auto_start(enabled=True):
-    """Windows Görev Zamanlayıcı (Task Scheduler) kaydını en yüksek yetkiyle oluşturur."""
+    """Windows Görev Zamanlayıcı kaydını en yüksek yetkiyle oluşturur."""
     task_name = "MuallimunAsistanAutoStart"
     
-    # Eski kayıt defteri (Registry) kalıntılarını temizle
+    # Kayıt defteri temizliği (Kodunuzdan korundu)
     if winreg:
         try:
             key = winreg.OpenKey(winreg.HKEY_CURRENT_USER, r"Software\Microsoft\Windows\CurrentVersion\Run", 0, winreg.KEY_SET_VALUE)
@@ -52,20 +55,22 @@ def set_auto_start(enabled=True):
             winreg.CloseKey(key)
         except: pass
 
-    # Uygulama yolunu belirle
     app_path = os.path.abspath(sys.executable if getattr(sys, 'frozen', False) else sys.argv[0])
-    if getattr(sys, 'frozen', False):
-        command = f'"{app_path}" --silent-start'
-    else:
-        pythonw = sys.executable.replace("python.exe", "pythonw.exe")
-        command = f'"{pythonw}" "{app_path}" --silent-start'
     
+    # KRİTİK: Boşluklu yollar için tırnakları schtasks'ın anlayacağı şekilde kaçırıyoruz
+    # /tr parametresi içindeki yol tırnak içine alınmalıdır: \"yol\" --parametre
+    task_cmd = f'\\"{app_path}\\" --silent-start'
+
     try:
-        # Mevcut görevi sil ve yenisini '/rl highest' (en yüksek yetki) ile ekle
+        # Mevcut görevi sil
         subprocess.run(f'schtasks /delete /tn "{task_name}" /f', shell=True, capture_output=True, creationflags=subprocess.CREATE_NO_WINDOW)
+        
         if enabled:
-            # /it: Etkileşimli (Interactive), /rl highest: Yönetici Onayı Sormadan Başlat
-            cmd = f'schtasks /create /tn "{task_name}" /tr "{command.replace('"', '\"')}" /sc onlogon /rl highest /it /f'
+            # GÖREVİ OLUŞTUR:
+            # /rl highest: Yönetici onayı sormadan başlatır
+            # /it: Kullanıcıyla etkileşime izin verir (Tray ikon için şart)
+            # /np: Şifre sormamasını sağlar (Bazen tetikleme sorunlarını çözer)
+            cmd = f'schtasks /create /tn "{task_name}" /tr "{task_cmd}" /sc onlogon /rl highest /it /f'
             subprocess.run(cmd, shell=True, capture_output=True, creationflags=subprocess.CREATE_NO_WINDOW)
     except: pass
 
