@@ -1,80 +1,76 @@
-# 📚 Muallimun Arapça Sözlük Asistanı v1.4.8
+# 📚 Muallimun Arabic Dictionary Assistant v1.5.0
+## 🌟 Arapça Sözlük Asistanı: Akıllı, Hızlı ve Evrensel
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Versiyon-1.4.8-blue?style=for-the-badge" alt="Versiyon">
+  <img src="https://img.shields.io/badge/Versiyon-1.5.0-blue?style=for-the-badge&logo=github" alt="Version">
   <img src="https://img.shields.io/badge/Platform-Windows-lightgrey?style=for-the-badge&logo=windows" alt="Platform">
-  <img src="https://img.shields.io/badge/Dil-Python%20%2F%20PyQt6-green?style=for-the-badge&logo=python" alt="Dil">
+  <img src="https://img.shields.io/badge/Dil-Python%20%2F%20PyQt6-green?style=for-the-badge&logo=python" alt="Language">
+  <img src="https://img.shields.io/badge/Lisans-Muallimun.Net-orange?style=for-the-badge" alt="License">
 </p>
 
-**Muallimun Arapça Sözlük Asistanı**, dijital metinler üzerinde çalışan eğitimciler, çevirmenler ve dil öğrencileri için geliştirilmiş, sistem genelinde (global) çalışan akıllı bir yardımcıdır. Sadece bir sözlük değil, kelime bankanızı oluşturan bir veri asistanıdır.
+---
+
+## 🌍 (EN) English Description
+**Muallimun Arabic Dictionary Assistant** is a professional tool designed for translators, students, and educators. It captures text from any Windows application (PDFs, Word, Browsers) and provides instant translations, while building your personal vocabulary bank in Excel.
+
+### ✨ What's New in v1.5.0?
+* **📌 Pin Window:** Keep the dictionary on top of other documents for constant visibility.
+* **🌍 Web View:** Instantly open the search result in your default browser for a full-page experience.
+* **🔄 Enhanced Search:** Improved bidirectional support for Arabic <> English/Turkish.
+* **⚡ Live UI:** Switch interface languages (EN, TR, AR) instantly without restarting.
+* **🌐 Global Default:** English is now the default interface for a global experience.
 
 ---
 
-## 🛡️ Güvenlik Duyurusu ve Yanlış Alarm Bildirimi (Security Notice)
+## 🇹🇷 (TR) Türkçe Açıklama
+**Muallimun Arapça Sözlük Asistanı**, dijital metinler (PDF, Word, Web) üzerinde çalışanlar için geliştirilmiş sistem genelinde bir yardımcıdır. Sadece bir sözlük değil, aynı zamanda kişisel kelime bankanızı oluşturan bir veri asistanıdır.
 
-**⚠️ Neden Virüs Uyarısı Alıyorum?**
-Uygulamamız Python diliyle geliştirilmiş açık kaynaklı ve güvenli bir projedir. Windows Defender veya tarayıcıların (Chrome/Edge) uyarı verme sebepleri şunlardır:
-1. **Dijital İmza Eksikliği:** Uygulama, bireysel bir geliştirici projesi olduğu için maliyeti çok yüksek olan "Kod İmzalama Sertifikası"na henüz sahip değildir.
-2. **Sistem Kancaları (Hooks):** Uygulama, kelime yakalamak için klavye ve fare hareketlerini takip eder. Antivirüs yazılımları bu fonksiyonu (keylogger şüphesiyle) yanlışlıkla tehdit olarak algılayabilir.
-3. **Paketleme:** PyInstaller ile yapılan paketlemeler bazen antivirüs veritabanlarında hatalı eşleşmelere yol açar.
-
-**Güvenle kullanabilirsiniz. İndirme ve kurulum sırasında çıkan uyarılarda "Sakla" ve "Yine de Çalıştır" seçeneklerini kullanarak devam edebilirsiniz.**
-
----
-
-## 🔥 Neden Muallimun Asistan?
-
-Geleneksel sözlüklerden farklı olarak bu uygulama, çalışma akışınızı bozmadan metinleri yakalar ve karmaşık Windows güvenlik kısıtlamalarını profesyonel çözümlerle aşar.
-
-### ✨ Öne Çıkan Özellikler
-
-* 🌍 **Evrensel Metin Yakalama:** PDF okuyucular (Acrobat vb.), Word belgeleri ve tüm web tarayıcılarında kesintisiz çalışır.
-* 🤖 **Akıllı Dil Algılama (Smart Detect):** Seçtiğiniz kelimenin Arapça, Türkçe veya İngilizce olduğunu otomatik olarak algılar ve sizi en uygun sözlük moduna (AR-TR, EN-AR vb.) yönlendirir.
-* 🛡️ **Sessiz Başlatma:** Windows başlangıcında onay kutusu (UAC) uyarısı çıkarmadan, Görev Zamanlayıcı aracılığıyla otomatik başlar.
-* 🧹 **Reklamsız Deneyim:** Çeviri sonuçlarındaki dikkat dağıtıcı reklamları otomatik olarak temizler.
-* 📊 **Dinamik Kelime Bankası:** Aradığınız kelimeleri tarih, saat ve anlam bilgisiyle birlikte kişisel Excel dosyanıza kaydeder.
-* 🌐 **Çoklu Dil Arayüzü:** Türkçe, İngilizce ve Arapça dil desteği sunar.
+### ✨ v1.5.0 Yenilikleri
+* **📌 Pencereyi Sabitle:** Sözlük penceresini diğer dokümanların üzerinde her zaman görünür tutun.
+* **🌍 Tarayıcıda Aç:** Arama sonuçlarını tek tıkla varsayılan tarayıcınızda tam sayfa görüntüleyin.
+* **🔄 Gelişmiş Arama:** Arapça <> Türkçe/İngilizce modları için optimize edilmiş çift yönlü arama.
+* **⚡ Canlı Arayüz:** Ayarlar penceresini kapatmadan anında dil (TR, EN, AR) ve mod değiştirme.
+* **🌐 Küresel Başlangıç:** Dünya genelindeki kullanıcılar için varsayılan dil artık İngilizcedir.
 
 ---
 
-## ⌨️ Kullanım Kısayolları
+## 🛡️ Security & Troubleshooting / Güvenlik ve Hata Çözümü
 
-Uygulama, hız için iki farklı erişim yöntemi sunar:
+**⚠️ (EN) Critical Notice for Antivirus:**
+* **False Positives:** Since this app uses "system hooks" to capture words, some antiviruses may flag it.
+* **ModuleNotFoundError:** If you see "No module named PyQt6.QtCore", your antivirus has quarantined essential files. 
+* **Solution:** Add the installation folder to your Antivirus **Exclusion/Safe List** and reinstall.
 
-| Yöntem | İşlem | Açıklama |
+**⚠️ (TR) Antivirüs ve Hata Çözümü:**
+* **Yanlış Alarm:** Uygulama kelime yakalamak için "sistem kancaları" kullandığından bazı antivirüsler tarafından engellenebilir.
+* **ModuleNotFoundError:** Eğer "No module named PyQt6.QtCore" hatası alıyorsanız, antivirüsünüz temel dosyaları karantinaya almış demektir.
+* **Çözüm:** Kurulum klasörünü antivirüsünüzün **"Dışlamalar / Güvenli Liste"** kısmına ekleyin ve tekrar kurun.
+
+---
+
+## ⌨️ Shortcuts / Kısayollar
+
+| 🛠️ Method / Yöntem | ⚡ Action / İşlem | 📝 Description / Açıklama |
 | :--- | :--- | :--- |
-| **Fare (Önerilen)** | `Seç + Orta Tekerlek` | Metni seçip farenin orta tuşuna tıklayın. |
-| **Klavye** | `Seç + Ctrl+Shift+Z` | Özelleştirilebilir global kısayol kombinasyonu. |
+| **🖱️ Mouse / Fare** | `Select + Middle Click` | Kelimeyi seçip orta tekerleğe tıklayın. |
+| **⌨️ Keyboard / Klavye** | `Select + Ctrl+Shift+Z` | Metni seçip kısayol tuşuna basın. |
 
 ---
 
-## 🚀 Kurulum Talimatları
+## 🚀 Installation / Kurulum
 
-1. **İndirme:** [Releases](https://github.com/muallimun/muallim_mucem_asistan/releases) sayfasından en güncel kurulum dosyasını indirin.
-2. **Tarayıcı Onayı:** Chrome veya Edge "Tehlikeli olabilir" uyarısı verirse, üç noktaya (...) basıp **"Sakla"** (Keep) seçeneğini işaretleyin.
-3. **Yine de Çalıştır:** Kurulumu başlatın; Windows SmartScreen uyarısı çıkarsa **"Ek Bilgi"** bağlantısına ve ardından **"Yine de Çalıştır"** butonuna basın.
-4. **Önemli Ayar:** Kurulum bittikten sonra Ayarlar penceresinden "Windows açılışında otomatik başlat" seçeneğini **bir kez kapatıp tekrar aktif edin**. Bu, Windows başlangıç kayıtlarını güncelleyecektir.
-
----
-
-## 🛠️ Teknik Altyapı
-
-Uygulama modern kütüphaneler ve ileri seviye Windows entegrasyonu ile geliştirilmiştir:
-* **Arayüz:** PyQt6 & QtWebEngine
-* **Hook Mekanizması:** Keyboard & Mouse global listeners
-* **Veri Yönetimi:** Openpyxl (Excel entegrasyonu)
-* **Sistem:** Windows Task Scheduler API (Sessiz başlangıç yönetimi için)
+1.  **Download:** Get the `onefile` version for the most stable experience.
+2.  **Browser Approval:** Select **"Keep"** (Sakla) if prompted.
+3.  **Windows SmartScreen:** Click **"More Info"** then **"Run Anyway"**.
+4.  **Auto-Start:** Go to **Settings**, toggle **"Auto-Start"** off and on once to refresh Windows task records.
 
 ---
 
-## 📝 Lisans ve Destek
+## 📝 License & Support / Lisans ve Destek
 
-Bu proje **Muallimun.Net** tarafından dil eğitimine katkı amacıyla geliştirilmiştir.
+* **Developer:** Abdullah TAT
+* **Contact:** [tatabdullah@hotmail.com](mailto:tatabdullah@hotmail.com)
+* **Web:** [Muallimun.Net](https://www.muallimun.net)
+* **Guide:** [Online User Guide](https://arapca.muallimun.net/asistan_sozluk/)
 
-* **Geliştirici:** Abdullah TAT
-* **İletişim:** [tatabdullah@hotmail.com](mailto:tatabdullah@hotmail.com)
-* *Destek:** [Muallim_Asisten] (https://arapca.muallimun.net/asistan_sozluk)
-* **Web:** [muallimun.net](https://www.muallimun.net)
-
----
-<p align="center"><i>Arapça öğrenim sürecinizi hızlandırmak için tasarlandı.</i></p>
+<p align="center"><i>Designed with ❤️ to accelerate your Arabic learning process.</i></p>
